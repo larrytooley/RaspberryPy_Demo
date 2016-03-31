@@ -26,6 +26,7 @@ allGreen = [firstLightGreen, secondLightGreen]
 colors = [allGreen, allYellow, allRed]
 
 GPIO.setmode(GPIO.BCM)  # set board mode to Broadcom
+GPIO.setwarnings(False)
 
 # set up light 1
 GPIO.setup(allLights, GPIO.OUT)     # set up all pins

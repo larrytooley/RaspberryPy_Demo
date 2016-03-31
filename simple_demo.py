@@ -16,6 +16,7 @@ secondLightYellow = 13
 secondLightRed = 26
 
 GPIO.setmode(GPIO.BCM)  # set board mode to Broadcom
+GPIO.setwarnings(False)
 
 # set up light 1
 GPIO.setup(firstLightGreen, GPIO.OUT)     # set up pin 4 / green
