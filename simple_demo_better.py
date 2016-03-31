@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 # Delay time
-testInt = 0.5
+testInt = 0.25
 
 # First light
 firstLightGreen = 4
@@ -31,21 +31,24 @@ GPIO.setup(allLights, GPIO.OUT)     # set up all pins
 
 
 # Test Pattern
-while True:
-    # Cycle greens
-    GPIO.output(allGreen, GPIO.HIGH)
-    sleep(testInt)
-    GPIO.output(allGreen, GPIO.LOW)
-    sleep(testInt)
+try:
+    while True:
+        # Cycle greens
+        GPIO.output(allGreen, GPIO.HIGH)
+        sleep(testInt)
+        GPIO.output(allGreen, GPIO.LOW)
+        sleep(testInt)
 
-    # Cycle yellows
-    GPIO.output(allYellow, GPIO.HIGH)
-    sleep(testInt)
-    GPIO.output(allYellow, GPIO.LOW)
-    sleep(testInt)
+        # Cycle yellows
+        GPIO.output(allYellow, GPIO.HIGH)
+        sleep(testInt)
+        GPIO.output(allYellow, GPIO.LOW)
+        sleep(testInt)
 
-    # Cycle reds
-    GPIO.output(allRed, GPIO.HIGH)
-    sleep(testInt)
-    GPIO.output(allRed, GPIO.LOW)
-    sleep(testInt)
+        # Cycle reds
+        GPIO.output(allRed, GPIO.HIGH)
+        sleep(testInt)
+        GPIO.output(allRed, GPIO.LOW)
+        sleep(testInt)
+except KeyboardInterrupt:
+    GPIO.cleanup()
