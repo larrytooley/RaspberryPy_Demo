@@ -1,9 +1,9 @@
 # import GPIO
 import RPi.GPIO as GPIO
-import time.sleep as sleep
+from time import sleep
 
 # Delay time
-testInt = 500
+testInt = 0.5 
 
 # First light
 firstLightGreen = 4
