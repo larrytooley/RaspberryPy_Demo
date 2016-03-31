@@ -1,6 +1,6 @@
 # import GPIO
 import RPi.GPIO as GPIO
-import time.sleep as sleep
+from time import sleep
 
 
 firstLightGreen = 4
