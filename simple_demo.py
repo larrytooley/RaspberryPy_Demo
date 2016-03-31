@@ -13,7 +13,7 @@ firstLightRed = 22
 # Second light
 secondLightGreen = 5
 secondLightYellow = 13
-secondLightRed = 24
+secondLightRed = 26
 
 GPIO.setmode(GPIO.BCM)  # set board mode to Broadcom
 

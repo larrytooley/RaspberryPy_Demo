@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 # Delay time
-testInt = 0.5 
+testInt = 0.5
 
 # First light
 firstLightGreen = 4
@@ -13,7 +13,7 @@ firstLightRed = 22
 # Second light
 secondLightGreen = 5
 secondLightYellow = 13
-secondLightRed = 24
+secondLightRed = 26
 
 # Setup Group
 allLights = [firstLightGreen, firstLightYellow, firstLightRed,
