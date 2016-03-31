@@ -45,7 +45,7 @@ try:
             # first light red pattern
             GPIO.output([firstLightRed, secondLightRed], GPIO.HIGH)
             GPIO.output([firstLightGreen, firstLightYellow,
-                         secondLightGreen, secondLightYellow], GPIO.HIGH)
+                         secondLightGreen, secondLightYellow], GPIO.LOW)
             sleep(2 * scale)
 
             # second light green pattern
